@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Band Grabber 3000</title>
+</head>
+<body>
+    <div class="container">
+        <h1>BAND GRABBER 3000</h1>
+        <div class="row">
+            <div id="left-col" class="col">
+                <h4>TOP 5 TRENDING ARTISTS</h4>
+                <h5 class="trending-artist" title="the weeknd">1. THE WEEKND</h5>
+                <img id="weeknd" title="the weeknd" class="trending-artist" src="https://www.theaudiodb.com/images/media/artist/fanart/the-weeknd-4ee6928ad3a11.jpg">
+                <h5 class="trending-artist" title="justin bieber">2. JUSTIN BIEBER</h5>
+                <img id="jbiebs" class="trending-artist" title="justin bieber" src="https://www.theaudiodb.com/images/media/artist/fanart/ytvppr1359651806.jpg">
+                <h5 class="trending-artist" title="ed sheeran">3. ED SHEERAN</h5>
+                <img id="bigEd" class="trending-artist" title="ed sheeran" src="https://www.theaudiodb.com/images/media/artist/fanart/ttrvpx1352738934.jpg">
+                <h5 class="trending-artist" title="dua lipa">4. DUA LIPA</h5>
+                <img id="dua" class="trending-artist" title="dua lipa" src="https://www.theaudiodb.com/images/media/artist/fanart/xsptxp1467451744.jpg">
+                <h5 class="trending-artist" title="taylor swift">5. TAYLOR SWIFT</h5>
+                <img id="tSwift" class="trending-artist" title="taylor swift" src="https://www.theaudiodb.com/images/media/artist/fanart/nx7p2s1630335124.jpg">
+
+            </div>
+            <div id="middle-col" class="col-6">
+                <form id="artist-search-form">
+                    <label for="user-input">SEARCH FOR YOUR FAVORITE ARTIST: </label>
+                    <input id="user-input" type="text">
+                    <input id="submit" type="submit">
+                </form>
+                <img id="artist-logo" src="./bandlogo.png">
+                <button id="favorite-btn">FAVORITE THIS ARTIST</button>
+                <div id="artist-info">
+                    <h2 id="artist-name"></h2>
+                    <span id="year-started">Year started: </span>
+                    <span id="artist-year"></span>
+                    <span id="genre">Artist genre:</span>
+                    <span id="artist-genre"></span>
+                    <span id="artist-label">Record label:</span>
+                    <span id="record-label"></span>
+                    <p id="artist-bio"></p>
+                </div>
+            </div>
+            <div id="right-col"class="col">
+                <h4>TOP 5 SELLING ARTISTS</h4>
+                <h5 class="trending-artist" title="the beatles">1. THE BEATLES</h5>
+                <img id="beatles" class="trending-artist" title="the beatles" src="https://www.theaudiodb.com/images/media/artist/fanart/xrqqqu1541458809.jpg">
+                <h5 class="trending-artist" title="michael jackson">2. MICHAEL JACKSON</h5>
+                <img id="mj" class="trending-artist" title="michael jackson" src="https://www.theaudiodb.com/images/media/artist/fanart/xsxspx1353880522.jpg">
+                <h5 class="trending-artist" title="elvis presley">3. ELVIS PRESLEY</h5>
+                <img id="elvis" class="trending-artist" title="elvis presley" src="https://www.theaudiodb.com/images/media/artist/fanart/elvis-presley-4ddf94a925d93.jpg">
+                <h5 class="trending-artist" title="queen">4. QUEEN</h5>
+                <img id="queen" class="trending-artist" title="queen" src="https://www.theaudiodb.com/images/media/artist/fanart/vquvyx1347980654.jpg">
+                <h5 class="trending-artist" title="madonna">5. MADONNA</h5>
+                <img id="madonna" class="trending-artist" title="madonna" src="https://www.theaudiodb.com/images/media/artist/fanart/sqqrsy1477043866.jpg">
+            </div>
+        </div>
+        <div id="favorites-container">
+            <h5 id="boldH5">YOUR FAVORITE ARTISTS</h5>
+            <ul id="favorites-list">
+            </ul>
+        </div>
+    </div>
+
+    
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

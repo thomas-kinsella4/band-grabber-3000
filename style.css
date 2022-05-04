@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    background-color: aliceblue;
+    font-family: 'Abel', sans-serif;
+}
+
+h1 {
+    padding-top: 30px;
+    font-size: 3.5em;
+}
+
+h2 {
+    padding-top: 30px;
+}
+
+.container {
+    height: 100%;
+    border-radius: 8px;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#artist-search-form {
+    margin-top: 30px;
+}
+
+#artist-info {
+    visibility: hidden;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#favorite-btn {
+    visibility: hidden;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: aliceblue;
+}
+
+#favorite-btn:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+#artist-logo {
+    padding: 20px;
+    width: 80%;
+    margin: 10px;
+}
+
+#artist-bio {
+    margin: 3.5em;
+}
+
+#year-started, #genre, #artist-label {
+    text-decoration: underline;
+}
+
+#artist-year, #artist-genre {
+    padding-right: 20px;
+}
+
+#weeknd, #bigEd, #jbiebs, #dua, #tSwift, #beatles, #elvis, #madonna, #queen, #mj {
+    padding: 0px;
+    width: 80%;
+    height: 200px;
+    margin: 30px;
+}
+
+.trending-artist:hover {
+    cursor: pointer;
+}
+
+#left-col {
+    border-right: 5px solid aliceblue;
+}
+
+#right-col {
+    border-left: 5px solid aliceblue;
+}
+
+h5 {
+    padding-top: 30px;
+}
+
+#favorites-list {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+}
+
+#favorites-container {
+    text-align: center;
+    visibility: hidden;
+    border-top: 5px solid aliceblue;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-size: larger;
+    cursor: pointer;
+}
+
+#boldH5 {
+    font-weight: bold;
+}
