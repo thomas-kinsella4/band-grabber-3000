@@ -12,7 +12,7 @@ const myBandObject = {
     intBornYear : "2021",
     strBiographyEN : "HOTTEST BAND EVER, AND I MEAN EVER",
     strGenre : "HOT",
-    strLabel : "SOON TO BE UNIVERSAL RECORDS AFTER RICHIE MARRIES IEVA"
+    strLabel : "INDEPENDENT"
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -26,13 +26,20 @@ document.addEventListener("DOMContentLoaded", () => {
         fetch(`https://www.theaudiodb.com/api/v1/json/2/search.php?s=${userInput.value}`)
         .then((res) => res.json())
         .then((data) => {
-        addArtistInfo(data.artists[0]);
-    
-            });
+        if (data.artists !== null) {
+            addArtistInfo(data.artists[0]);
+        } else {
+            renderErrorMessage()
+        }
+        });
         }
     })
 
-    
+    function renderErrorMessage() {
+        const errorH4 = document.querySelector("#error");
+
+        errorH4.style.visibility = "visible";
+    }
     
     function addArtistInfo(data) {
         const artistInfo = document.querySelector("#artist-info");
@@ -42,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const artistBio = document.querySelector("#artist-bio");
         const artistGenre = document.querySelector("#artist-genre");
         const artistLabel = document.querySelector("#record-label");
+        const errorH4 = document.querySelector("#error");
         
         favoriteBtn.style.visibility = "visible";
         artistInfo.style.visibility = "visible";
@@ -51,6 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
         artistBio.textContent = data.strBiographyEN;
         artistGenre.textContent = `  ${data.strGenre}`;
         artistLabel.textContent = data.strLabel;
+        errorH4.style.visibility = "hidden";
         
     }
 

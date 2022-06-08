@@ -110,3 +110,7 @@ li {
 #boldH5 {
     font-weight: bold;
 }
+
+#error {
+    visibility: hidden;
+}
